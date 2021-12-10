@@ -123,7 +123,7 @@ const Payment = () => {
                                                     required
                                                     {...register("idAccountRecipient")}
                                                 >
-                                                    <option  disabled value={null}>{`choisissez un compte`}</option>
+                                                    <option  selected disabled value={null}>{`choisissez un compte`}</option>
                                                     {accounts.map((e) => (
                                                         <option value={e.numeroCompte}>{`${e.wording} - 
                                         ${e.solde} €`}</option>
