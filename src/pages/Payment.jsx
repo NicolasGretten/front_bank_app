@@ -67,7 +67,7 @@ const Payment = () => {
                                 ?
                                     (
                                         <>
-                                            <label className="text-center">Compte a prélever</label>
+                                            <label className="text-center">Compte source</label>
                                             <select
                                                 className="rounded p-1 border border-blue-800 rounded text-center bg-white"
                                                 required
@@ -117,7 +117,7 @@ const Payment = () => {
                                     ?
                                         (
                                             <>
-                                                <label className="text-center">Compte interne à transférer</label>
+                                                <label className="text-center">Compte cible interne</label>
                                                 <select
                                                     className="rounded p-1 border border-blue-800 rounded text-center bg-white"
                                                     required
@@ -133,7 +133,7 @@ const Payment = () => {
                                         :
                                         (
                                             <>
-                                                <label className="text-center">Compte externe à transférer</label>
+                                                <label className="text-center">Compte cible externe</label>
                                                 <input
                                                     className="p-1 border border-blue-800 rounded text-center"
                                                     required
