@@ -113,17 +113,16 @@ const Payment = () => {
                                     <label className="ml-2">Virement interne</label>
                                 </div>
                                 {
-                                    !checked
+                                    checked
                                     ?
                                         (
                                             <>
-                                                <label className="text-center">Compte externe à prélever</label>
+                                                <label className="text-center">Compte interne à transférer</label>
                                                 <select
                                                     className="rounded p-1 border border-blue-800 rounded text-center bg-white"
                                                     required
                                                     {...register("idAccountRecipient")}
                                                 >
-                                                    <option  selected disabled value={null}>{`choisissez un compte`}</option>
                                                     {accounts.map((e) => (
                                                         <option value={e.numeroCompte}>{`${e.wording} - 
                                         ${e.solde} €`}</option>
@@ -134,7 +133,7 @@ const Payment = () => {
                                         :
                                         (
                                             <>
-                                                <label className="text-center">Compte interne à transférer</label>
+                                                <label className="text-center">Compte externe à transférer</label>
                                                 <input
                                                     className="p-1 border border-blue-800 rounded text-center"
                                                     required
