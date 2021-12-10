@@ -29,7 +29,7 @@ const AccountBox = (props) => {
                     <div className="flex gap-2 md:gap-4">
                         <Link to={`/payment?id=${nb}`}
                            className="bg-blue-600 px-5 py-3 w-full text-center md:w-auto rounded-lg text-white text-xs tracking-wider font-semibold hover:bg-blue-800">
-                            {`Envoyé de l'argent`}
+                            {`Envoyer de l'argent`}
                         </Link>
                     </div>
                 </div>
